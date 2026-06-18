@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://blt24o60ehxtq"]
+
+[ext_resource type="Texture2D" uid="uid://bm2rcy3blrdin" path="res://Assets/Images/Blank.png" id="1_fsk2f"]
+[ext_resource type="Script" uid="uid://qjlxhd2rt3dj" path="res://Assets/Scenes/selected_face.gd" id="2_3bfa8"]
+
+[node name="Selected_Face" type="Control" unique_id=2120153253 node_paths=PackedStringArray("dice_face")]
+z_index = 1
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1120.0
+offset_bottom = -616.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_3bfa8")
+dice_face = NodePath("TextureRect")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=286554945]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+texture = ExtResource("1_fsk2f")

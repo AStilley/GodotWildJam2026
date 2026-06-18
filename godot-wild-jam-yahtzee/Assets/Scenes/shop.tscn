@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://0hw4e6h4kgd3"]
+
+[ext_resource type="Script" uid="uid://cdibfqo18wqxv" path="res://Assets/Scenes/shop.gd" id="1_m65fh"]
+[ext_resource type="Texture2D" uid="uid://bsfmd1rpnswhc" path="res://Assets/Images/Shop Rough Draft.png" id="1_rfwe3"]
+[ext_resource type="PackedScene" uid="uid://c2pa46x26h1u6" path="res://Assets/Scenes/sell_dice_face.tscn" id="2_0cgyj"]
+[ext_resource type="PackedScene" uid="uid://bq5qw6fwswssi" path="res://Assets/Scenes/face_selection.tscn" id="4_88w0c"]
+[ext_resource type="PackedScene" uid="uid://bcgw0r7pkmyl7" path="res://Assets/Scenes/back_button.tscn" id="5_w0ok4"]
+
+[node name="ShopScene" type="Control" unique_id=991897084 node_paths=PackedStringArray("dice_container")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m65fh")
+sell_dice_face = ExtResource("2_0cgyj")
+dice_container = NodePath("CenterContainer/VBoxContainer/HBoxContainerDice")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=874734856]
+visible = false
+layout_mode = 1
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 802.0
+offset_bottom = 602.0
+texture = ExtResource("1_rfwe3")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=337105342]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -32.0
+offset_top = 64.0
+offset_right = 32.0
+offset_bottom = 128.0
+grow_horizontal = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1198966374]
+layout_mode = 2
+theme_override_constants/separation = 224
+
+[node name="HBoxContainerDice" type="HBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=2034831352]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_constants/separation = 64
+alignment = 1
+
+[node name="PlayerInventory" parent="CenterContainer/VBoxContainer" unique_id=85789296 instance=ExtResource("4_88w0c")]
+layout_mode = 2
+
+[node name="Back Button" parent="." unique_id=1134357569 instance=ExtResource("5_w0ok4")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 830.0
+offset_top = 465.0
+offset_right = 830.0
+offset_bottom = 465.0
+grow_horizontal = 1
+grow_vertical = 1

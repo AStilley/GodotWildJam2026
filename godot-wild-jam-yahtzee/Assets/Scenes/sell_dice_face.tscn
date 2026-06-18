@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://c2pa46x26h1u6"]
+
+[ext_resource type="Texture2D" uid="uid://driav401caiu" path="res://Assets/Images/dice1.png" id="1_686ka"]
+[ext_resource type="Script" uid="uid://betrema3qrpwu" path="res://Assets/Scenes/sell_dice_face.gd" id="1_xkm2n"]
+[ext_resource type="Texture2D" uid="uid://vf0kdm14a4pr" path="res://Assets/Images/cash_coin_B.png" id="2_mn7eg"]
+[ext_resource type="Texture2D" uid="uid://bm2rcy3blrdin" path="res://Assets/Images/Blank.png" id="4_thme6"]
+
+[node name="SellDiceFace" type="Control" unique_id=1834723001 node_paths=PackedStringArray("dice_face", "highlight")]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1024.0
+offset_bottom = -520.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xkm2n")
+dice_face = NodePath("TextureRect")
+highlight = NodePath("TextureRect/TextureRect2HIGHLIGHT")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1137157677]
+texture_filter = 1
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_686ka")
+
+[node name="Price" type="Label" parent="TextureRect" unique_id=244684332]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "0"
+horizontal_alignment = 1
+
+[node name="Coin" type="TextureRect" parent="TextureRect/Price" unique_id=1141592502]
+texture_filter = 1
+layout_mode = 0
+offset_left = -5.0
+offset_top = 4.0
+offset_right = 11.0
+offset_bottom = 20.0
+texture = ExtResource("2_mn7eg")
+
+[node name="TextureRect2HIGHLIGHT" type="TextureRect" parent="TextureRect" unique_id=1579668647]
+visible = false
+modulate = Color(0, 1, 0, 1)
+self_modulate = Color(1, 1, 0, 1)
+z_index = -1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.0
+offset_top = -39.0
+offset_right = 25.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("4_thme6")

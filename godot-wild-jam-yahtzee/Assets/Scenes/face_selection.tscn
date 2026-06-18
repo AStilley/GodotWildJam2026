@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://bq5qw6fwswssi"]
+
+[ext_resource type="PackedScene" uid="uid://blt24o60ehxtq" path="res://Assets/Scenes/selected_face.tscn" id="1_3b1kb"]
+[ext_resource type="Script" uid="uid://bss2ce6wiyv3m" path="res://Assets/Scenes/PlayerInventory.gd" id="1_jj4gd"]
+[ext_resource type="Texture2D" uid="uid://driav401caiu" path="res://Assets/Images/dice1.png" id="1_l454j"]
+[ext_resource type="Texture2D" uid="uid://85xab6jat0qu" path="res://Assets/Images/dice2.png" id="2_3b1kb"]
+[ext_resource type="Texture2D" uid="uid://c2euoiod2lpxt" path="res://Assets/Images/dice3.png" id="3_jj4gd"]
+[ext_resource type="Texture2D" uid="uid://c75dekvbw776a" path="res://Assets/Images/dice4.png" id="4_i4e6l"]
+[ext_resource type="Texture2D" uid="uid://2ilbq7i36qr8" path="res://Assets/Images/dice5.png" id="5_dbdtm"]
+[ext_resource type="Texture2D" uid="uid://c78uapp6mv2o3" path="res://Assets/Images/dice6.png" id="6_mr142"]
+
+[node name="PlayerInventory" type="Control" unique_id=85789296 node_paths=PackedStringArray("dice_container")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jj4gd")
+dice_container = NodePath("CenterContainer/VBoxContainer/HBoxContainer")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=300317896]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_right = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1867691359]
+layout_mode = 2
+theme_override_constants/separation = 4
+alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=646694876]
+layout_mode = 2
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer/VBoxContainer/HBoxContainer2" unique_id=1632423874]
+layout_mode = 2
+texture = ExtResource("1_l454j")
+
+[node name="TextureRect2" type="TextureRect" parent="CenterContainer/VBoxContainer/HBoxContainer2" unique_id=1452266025]
+layout_mode = 2
+texture = ExtResource("2_3b1kb")
+
+[node name="TextureRect3" type="TextureRect" parent="CenterContainer/VBoxContainer/HBoxContainer2" unique_id=582948390]
+layout_mode = 2
+texture = ExtResource("3_jj4gd")
+
+[node name="TextureRect4" type="TextureRect" parent="CenterContainer/VBoxContainer/HBoxContainer2" unique_id=1578296330]
+layout_mode = 2
+texture = ExtResource("4_i4e6l")
+
+[node name="TextureRect5" type="TextureRect" parent="CenterContainer/VBoxContainer/HBoxContainer2" unique_id=2000027897]
+layout_mode = 2
+texture = ExtResource("5_dbdtm")
+
+[node name="TextureRect6" type="TextureRect" parent="CenterContainer/VBoxContainer/HBoxContainer2" unique_id=1871893934]
+layout_mode = 2
+texture = ExtResource("6_mr142")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=1021335417]
+layout_mode = 2
+theme_override_constants/separation = 4
+alignment = 1
+
+[node name="Selected_Face" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=2120153253 instance=ExtResource("1_3b1kb")]
+layout_mode = 2
+
+[node name="Selected_Face2" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=236586195 instance=ExtResource("1_3b1kb")]
+layout_mode = 2
+
+[node name="Selected_Face3" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=804395631 instance=ExtResource("1_3b1kb")]
+layout_mode = 2
+
+[node name="Selected_Face4" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=1383691060 instance=ExtResource("1_3b1kb")]
+layout_mode = 2
+
+[node name="Selected_Face5" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=589317041 instance=ExtResource("1_3b1kb")]
+layout_mode = 2
+
+[node name="Selected_Face6" parent="CenterContainer/VBoxContainer/HBoxContainer" unique_id=97447093 instance=ExtResource("1_3b1kb")]
+layout_mode = 2

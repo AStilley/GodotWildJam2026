@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="GodotWildJam-Yahtzee"
+run/main_scene="uid://0hw4e6h4kgd3"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*uid://c7k3r1avnxqpv"
 
 [physics]
 

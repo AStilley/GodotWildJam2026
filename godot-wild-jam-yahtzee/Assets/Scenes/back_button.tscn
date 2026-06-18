@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bcgw0r7pkmyl7"]
+
+[ext_resource type="Texture2D" uid="uid://b730c4ihivr2g" path="res://Assets/Images/Back.png" id="1_a67a0"]
+[ext_resource type="Script" uid="uid://607jrmjw5wus" path="res://Assets/Scenes/back_button.gd" id="1_x43go"]
+
+[node name="Back Button" type="Control" unique_id=1134357569 node_paths=PackedStringArray("button")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x43go")
+button = NodePath("TextureRect")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1273384284]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_a67a0")
