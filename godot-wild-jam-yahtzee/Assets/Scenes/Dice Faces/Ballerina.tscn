@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cwui6e2kolx4t"]
+
+[ext_resource type="PackedScene" uid="uid://c2pa46x26h1u6" path="res://Assets/Scenes/sell_dice_face.tscn" id="1_30whe"]
+
+[node name="SellDiceFace" unique_id=1834723001 instance=ExtResource("1_30whe")]
+itemID = "ballerina"

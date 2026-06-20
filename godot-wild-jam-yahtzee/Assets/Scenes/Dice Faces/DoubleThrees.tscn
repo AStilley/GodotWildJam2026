@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dgl5ig4s7uj8l"]
+
+[ext_resource type="PackedScene" uid="uid://c2pa46x26h1u6" path="res://Assets/Scenes/sell_dice_face.tscn" id="1_cugdu"]
+
+[node name="SellDiceFace" unique_id=1834723001 instance=ExtResource("1_cugdu")]
+itemID = "double_threes"
+
+[node name="Price" parent="TextureRect" parent_id_path=PackedInt32Array(1137157677) index="0" unique_id=244684332]
+text = "3"

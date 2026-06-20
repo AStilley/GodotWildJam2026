@@ -4,7 +4,7 @@ extends Control
 @export var highlight: TextureRect
 var hovering: bool
 @export var price: int
-
+@export var itemID: String
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _ready() -> void:
 	price = int($TextureRect/Price.text)
