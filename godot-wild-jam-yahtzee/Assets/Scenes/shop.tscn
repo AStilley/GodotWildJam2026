@@ -5,6 +5,11 @@
 [ext_resource type="PackedScene" uid="uid://c2pa46x26h1u6" path="res://Assets/Scenes/sell_dice_face.tscn" id="2_0cgyj"]
 [ext_resource type="PackedScene" uid="uid://bq5qw6fwswssi" path="res://Assets/Scenes/face_selection.tscn" id="4_88w0c"]
 [ext_resource type="PackedScene" uid="uid://bcgw0r7pkmyl7" path="res://Assets/Scenes/back_button.tscn" id="5_w0ok4"]
+[ext_resource type="PackedScene" uid="uid://2bvk00821hij" path="res://Assets/Scenes/Dice Faces/DoublePoints.tscn" id="9_3bhdf"]
+[ext_resource type="PackedScene" uid="uid://baef6pey1ryr0" path="res://Assets/Scenes/Dice Faces/GoldRoll.tscn" id="10_f0ydx"]
+[ext_resource type="PackedScene" uid="uid://menc51rmds1g" path="res://Assets/Scenes/Dice Faces/PointRoll.tscn" id="15_8v2c4"]
+[ext_resource type="PackedScene" uid="uid://brnp7rgmm7na3" path="res://Assets/Scenes/Dice Faces/SlowDice.tscn" id="16_j4v1s"]
+[ext_resource type="PackedScene" uid="uid://ifc12egicbwj" path="res://Assets/Scenes/Dice Faces/BigPointRoll.tscn" id="18_sey1t"]
 
 [node name="ShopScene" type="Control" unique_id=991897084 node_paths=PackedStringArray("dice_container")]
 layout_mode = 3
@@ -16,6 +21,7 @@ grow_vertical = 2
 script = ExtResource("1_m65fh")
 sell_dice_face = ExtResource("2_0cgyj")
 dice_container = NodePath("CenterContainer/VBoxContainer/HBoxContainerDice")
+items = Array[PackedScene]([ExtResource("9_3bhdf"), ExtResource("10_f0ydx"), ExtResource("15_8v2c4"), ExtResource("16_j4v1s"), ExtResource("18_sey1t")])
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=874734856]
 visible = false

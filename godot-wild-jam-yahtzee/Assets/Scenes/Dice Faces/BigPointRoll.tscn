@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://ifc12egicbwj"]
+
+[ext_resource type="PackedScene" uid="uid://c2pa46x26h1u6" path="res://Assets/Scenes/sell_dice_face.tscn" id="1_ng1iw"]
+[ext_resource type="Texture2D" uid="uid://bkcumcq7wba0p" path="res://Assets/Images/+20.png" id="2_pl1bo"]
+
+[node name="SellDiceFace" unique_id=1834723001 instance=ExtResource("1_ng1iw")]
+itemID = "big_point_roll"
+
+[node name="TextureRect" parent="." index="0" unique_id=1137157677]
+texture = ExtResource("2_pl1bo")
+
+[node name="Price" parent="TextureRect" index="0" unique_id=244684332]
+text = "5"

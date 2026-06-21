@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://2bvk00821hij"]
+
+[ext_resource type="PackedScene" uid="uid://c2pa46x26h1u6" path="res://Assets/Scenes/sell_dice_face.tscn" id="1_7qabs"]
+[ext_resource type="Texture2D" uid="uid://bppqipxablm7q" path="res://Assets/Images/2x.png" id="2_v443f"]
+
+[node name="SellDiceFace" unique_id=1834723001 instance=ExtResource("1_7qabs")]
+itemID = "double_points"
+
+[node name="TextureRect" parent="." index="0" unique_id=1137157677]
+texture = ExtResource("2_v443f")
+
+[node name="Price" parent="TextureRect" index="0" unique_id=244684332]
+text = "5"

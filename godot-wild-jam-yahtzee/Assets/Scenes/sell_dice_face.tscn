@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://driav401caiu" path="res://Assets/Images/dice1.png" id="1_686ka"]
 [ext_resource type="Script" uid="uid://betrema3qrpwu" path="res://Assets/Scenes/sell_dice_face.gd" id="1_xkm2n"]
 [ext_resource type="Texture2D" uid="uid://vf0kdm14a4pr" path="res://Assets/Images/cash_coin_B.png" id="2_mn7eg"]
+[ext_resource type="FontFile" uid="uid://c6h7ca3lksgbw" path="res://Assets/Early GameBoy.ttf" id="3_5b5hs"]
 [ext_resource type="Texture2D" uid="uid://bm2rcy3blrdin" path="res://Assets/Images/Blank.png" id="4_thme6"]
 
 [node name="SellDiceFace" type="Control" unique_id=1834723001 node_paths=PackedStringArray("dice_face", "highlight")]
@@ -37,16 +38,17 @@ offset_left = -40.0
 offset_bottom = 23.0
 grow_horizontal = 0
 grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_5b5hs")
 text = "0"
 horizontal_alignment = 1
 
 [node name="Coin" type="TextureRect" parent="TextureRect/Price" unique_id=1141592502]
 texture_filter = 1
 layout_mode = 0
-offset_left = -5.0
-offset_top = 4.0
-offset_right = 11.0
-offset_bottom = 20.0
+offset_left = -8.0
+offset_top = 1.0
+offset_right = 8.0
+offset_bottom = 17.0
 texture = ExtResource("2_mn7eg")
 
 [node name="TextureRect2HIGHLIGHT" type="TextureRect" parent="TextureRect" unique_id=1579668647]

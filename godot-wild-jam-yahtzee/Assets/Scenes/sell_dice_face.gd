@@ -33,6 +33,7 @@ func _input(event) -> void:
 					GameManager.currentlyBuying = true
 					GameManager.currentItemPrice = price
 					GameManager.currentBuyItem = get_index()
+					GameManager.currentItemID = itemID
 					highlight.visible = true
 func resetChoice()->void:
 	highlight.visible = false	

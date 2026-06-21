@@ -16,7 +16,7 @@ signal BuyItem
 var player_dice = [null,null,null,null,null,null]
 #Way to minimize scope in case of emergency - All dice have the same effect faces
 
-var money: int =0
+var money: int = 10
 var mutations = []
 
 var currentSelectedFaceIndex: int = -1
@@ -24,6 +24,7 @@ var currentlyBuying:bool = false
 var currentItemPrice: int = 0
 
 var currentBuyItem: int = -1
+var currentItemID:String = ""
 
 func add_money(amount: int) -> void:
 	money += amount
@@ -49,4 +50,5 @@ func resetBuying()-> void:
 	currentlyBuying = false
 	currentItemPrice = 0
 	currentBuyItem = -1
+	currentItemID = ""
 	pass

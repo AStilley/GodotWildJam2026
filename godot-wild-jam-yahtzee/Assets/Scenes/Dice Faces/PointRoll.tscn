@@ -1,9 +1,13 @@
 [gd_scene format=3 uid="uid://menc51rmds1g"]
 
 [ext_resource type="PackedScene" uid="uid://c2pa46x26h1u6" path="res://Assets/Scenes/sell_dice_face.tscn" id="1_n3tka"]
+[ext_resource type="Texture2D" uid="uid://c7b88gnux27kv" path="res://Assets/Images/+10.png" id="2_trid8"]
 
 [node name="SellDiceFace" unique_id=1834723001 instance=ExtResource("1_n3tka")]
 itemID = "point_roll"
 
-[node name="Price" parent="TextureRect" parent_id_path=PackedInt32Array(1137157677) index="0" unique_id=244684332]
-text = "5"
+[node name="TextureRect" parent="." index="0" unique_id=1137157677]
+texture = ExtResource("2_trid8")
+
+[node name="Price" parent="TextureRect" index="0" unique_id=244684332]
+text = "3"

@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://b7smilgs6bk7m"]
-
-[ext_resource type="PackedScene" uid="uid://c2pa46x26h1u6" path="res://Assets/Scenes/sell_dice_face.tscn" id="1_k2ckn"]
-
-[node name="SellDiceFace" unique_id=1834723001 instance=ExtResource("1_k2ckn")]
-itemID = "lower_points"
-
-[node name="Price" parent="TextureRect" parent_id_path=PackedInt32Array(1137157677) index="0" unique_id=244684332]
-text = "5"

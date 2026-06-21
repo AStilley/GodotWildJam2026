@@ -2,12 +2,13 @@ extends Control
 
 @export var sell_dice_face:PackedScene
 @export var dice_container: HBoxContainer
+@export var items: Array[PackedScene]
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	#Creates 3 dice to sell
 	for i in range(3):
 		print("Test")
-		var sell_dice_face_instance = sell_dice_face.instantiate()
+		var sell_dice_face_instance = items.pick_random().instantiate()
 		dice_container.add_child(sell_dice_face_instance)
 	GameManager.connect("BuyItem",ItemBought)	
 	pass # Replace with function body.
